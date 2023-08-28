@@ -1,4 +1,5 @@
 const Task=require('../models/Task')
+const asyncWrapper=require('../middleware/async')
 const getAlltask=async (req,res)=>{
     try{
         const tasks=await Task.find({})
