@@ -4,8 +4,8 @@ const app=express()
 const port = 3000
 const tasks = require('./Routes/tasks')
 const connectDB=require('./db/connect')
-require('dotenv').config()
 const notFound=require('./middleware/not-found')
+require('dotenv').config()
 
 
 app.use(express.static('./public'))
